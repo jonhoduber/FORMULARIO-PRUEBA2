@@ -1,0 +1,159 @@
+/*................................................
+[ Fuentes ]*/
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../fonts/montserrat/Montserrat-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Montserrat-Bold;
+    src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Montserrat-Black;
+    src: url('../fonts/montserrat/Montserrat-Black.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Montserrat-SemiBold;
+    src: url('../fonts/montserrat/Montserrat-SemiBold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Montserrat-Medium;
+    src: url('../fonts/montserrat/Montserrat-Medium.ttf'); 
+  }
+/*-------------------------
+  Simple reset
+  --------------------------*/
+  
+  *{
+      margin:0;
+      padding:0;
+  }
+/*----------------------------
+    The file upload form
+-----------------------------*/
+
+#upload{
+    font-family:Montserrat-Regular;
+    background-color:#f2f4f7;
+    border: 3px dotted #076879;
+
+    background-image:-webkit-linear-gradient(top, #fffbfb, #ffffff);
+    background-image:-moz-linear-gradient(top, #616364, #313437);
+    background-image:linear-gradient(top, #373a3d, #313437);
+
+    width:70%;
+    padding:30px;
+    border-radius:3px;
+
+    margin:8px 10px 10px;
+    
+}
+
+#drop{
+    background-color: rgb(244, 244, 245);
+    padding: 40px 50px;
+    margin-bottom: 30px;
+    border: 20px solid #faf7f7;
+    border-radius: 3px;
+    border-image: url('../img/border-image.png') 25 repeat;
+    text-align:center;
+    font-size:17px;
+    color:#535353;
+}
+
+#drop a{
+    font-family: Montserrat-Regular;
+    background-color:#076879;
+    padding:12px 26px;
+    color:#fff;
+    font-size:14px;
+    border-radius:2px;
+    cursor:pointer;
+    display:inline-block;
+    margin-top:12px;
+    line-height:1;
+}
+
+#drop a:hover{
+    background-color:#0986a3;
+}
+
+#drop input{
+    display:none;
+}
+
+#upload ul{
+    list-style:none;
+    margin:0 -30px;
+    border-top:1px solid #076879;
+    border-bottom:1px solid #076879;
+}
+
+#upload ul li{
+
+    background-color:#ffffff;
+
+    background-image:-webkit-linear-gradient(top, #ffffff, #ffffff);
+    background-image:-moz-linear-gradient(top, #ffffff, #ffffff);
+    background-image:linear-gradient(top, #ffffff, #ffffff);
+
+    border-top:1px solid #f1f2f3;
+    border-bottom:1px solid #ffffff;
+    padding:14px;
+    height: 52px;
+
+    position: relative;
+}
+
+#upload ul li input{
+    display: none;
+}
+
+#upload ul li p{
+    width: 144px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #EEE;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+
+#upload ul li i{
+    font-weight: normal;
+    font-style:normal;
+    color:#7f7f7f;
+    display:block;
+}
+
+#upload ul li canvas{
+    top: 15px;
+    left: 32px;
+    position: absolute;
+}
+
+#upload ul li span{
+    width: 15px;
+    height: 12px;
+    background: url('../img/icons.png') no-repeat;
+    position: absolute;
+    top: 34px;
+    right: 33px;
+    cursor:pointer;
+}
+
+#upload ul li.working span{
+    height: 16px;
+    background-position: 0 -12px;
+}
+
+#upload ul li.error p{
+    color:red;
+}

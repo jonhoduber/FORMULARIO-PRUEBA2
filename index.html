@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>FORMULARIO PUBLIC</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--_______________________________________________________________________________________________-->
+	<link rel="icon" type="image/png" href="images/icons/favicity.ico"/>
+<!--_______________________________________________________________________________________________-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--_______________________________________________________________________________________________-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--_______________________________________________________________________________________________-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--_______________________________________________________________________________________________-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--_______________________________________________________________________________________________-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--_______________________________________________________________________________________________-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--_______________________________________________________________________________________________-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--_______________________________________________________________________________________________-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--_______________________________________________________________________________________________-->
+	<link rel="stylesheet" type="text/css" href="vendor/noui/nouislider.min.css">
+<!--_______________________________________________________________________________________________-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="assets/css/style.css" rel="stylesheet" />
+<!--_______________________________________________________________________________________________-->
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<div>
+				<img src="images/logotio final cotycoco-01.jpg" class="city" width="280" alt="logotipo">
+				</div>	
+				
+				<div class="wrap-input100 input100-select bg1">
+						<h3>Información de la Citycoco</h3>
+						<hr/>
+					<span class="label-input100">Datos Obligatorios *</span>
+					<div>
+						<select class="js-select2" name="service">
+							<option>Selecciona Modelo</option>
+							<option>MINI</option>
+							<option>BASICA</option>
+							<option>FULL</option>
+							<option>HARLEY</option>
+							<option>SUPER</option>
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+				</div>
+
+				<div class="w-full dis-none js-show-service">
+						<!--<div class="wrap-contact100-form-file">
+								<span class="label-input100">INGRESA FOTOS DE TU CITYCOCO</span>
+								<div>
+								<input type="file" name="imagen 1" class="sub">
+								<input type="file" name="imagen 2" class="sub">
+								<input type="file" name="imagen 3" class="sub">
+								<input type="file" name="imagen 4" class="sub">
+								<input type="file" name="imagen 5" class="sub">
+								<input type="file" name="imagen 6" class="sub">
+							</div>
+						</div>-->
+					<div class="wrap-contact100-form-radio">
+						<span class="label-input100">SELECCIONA MOTOR: </span>
+
+						<div class="contact100-form-radio m-t-15">
+							<input class="input-radio100" id="radio1" type="radio" name="type-product" value="350W" checked="checked">
+							<label class="label-radio100" for="radio1">
+								350W
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio2" type="radio" name="type-product" value="400W" checked="checked">
+							<label class="label-radio100" for="radio2">
+								400W
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio3" type="radio" name="type-product" value="1000W" checked="checked">
+							<label class="label-radio100" for="radio3">
+								1000W
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio4" type="radio" name="type-product" value="1500W">
+							<label class="label-radio100" for="radio4">
+								1500W
+							</label>
+						</div>
+
+						<div class="contact100-form-radio">
+							<input class="input-radio100" id="radio5" type="radio" name="type-product" value="4000W">
+							<label class="label-radio100" for="radio5">
+								4000W
+							</label>
+						</div>
+					</div>
+
+						<div class="wrap-contact100-form-option">
+						<span class="label-input100">INGRESA BATERIA:</span>
+						<select class="cat" name="bateria">
+							<option>SELECCIONA BATERIA</option>
+								<option>60V 12AH</option>
+								<option>60V 15AH</option>
+								<option>60V 20AH</option>
+							</select>
+						</div>
+
+					<div class="wrap-contact100-form-range">
+						<span class="label-input100">TIEMPO DE USO (Relativo) *</span>
+
+						<div class="contact100-form-range-value">
+							Año <span id="value-lower">0</span> - Meses <span id="value-upper">60</span>
+							<input type="text" name="from-value">
+							<input type="text" name="to-value">
+						</div>
+
+						<div class="contact100-form-range-bar">
+							<div id="filter-bar"></div>
+						</div>
+
+					<div class="wrap-contact100-form-file"></div>
+					<span class="label-input100">INGRESA FOTOS DE TU CITYCOCO:</span>
+					<p>Aumenta las posibilidades de vender tu producto</p>
+					<div id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+						<div id="drop">
+						Suelte los archivos aquí o haga clic para cargar.
+		
+								<a>Cargar Fotos</a>
+								<input type="file" name="upl" multiple />
+						</div>
+		
+						<ul>
+								<!-- The file uploads will be shown here -->
+						</ul>
+				</div>
+			</div>
+
+
+				    <span class="label-input100">TITULO: *</span>
+					<div class="wrap-input200 validate-input bg2 rs1-wrap-input100" data-validate = "¡Ingrese Titulo de venta !">
+						<input class="input100" type="text" name="title" placeholder="Ej.:Citycoco Full 2019 como nueva">
+						<p>Un buen título requiere al menos 60 caracteres</p>
+					</div>
+					
+					<span class="label-input100">DESCRIPCION:* </span>
+					<div class="wrap-input200 validate-input bg0 rs1-alert-validate" data-validate = "¡Por favor describa estado de Scooter!">
+						<textarea class="input100" name="message" placeholder="Defecto de la Scooter..."></textarea>
+					</div>
+					<span class="label-input100">UBICACION (Provincia):*</span>
+					<div class="wrap-input200 validate-input bg2 rs1-wrap-input100" data-validate = "¡Por favor completar campo!">
+						<input class="input100" type="text" name="provincia" placeholder="Ej.: Pichincha, guayas, esmeraldas.. ">
+					</div>
+	
+					<span class="label-input100">DIRECCION (CIUDAD):*</span>
+					<div class="wrap-input200 validate-input bg2 rs1-wrap-input100" data-validate = "¡Por favor completar campo!">
+						<input class="input100" type="text" name="ciudad" placeholder="Ej.: Quito, ambato, Cayambe... ">
+					</div>
+				</div>
+
+				<div class="wrap-input100 validate-input bg1" data-validate="¡Ingresa datos de venta!">
+					<h4>Valor de venta</h4>
+					<hr/>
+				<span class="label-input100">PRECIO *</span>
+					<input class="input100" type="number" name="Numero" placeholder="Valor USD $">
+					<span class="label-input100">MEDIOS DE PAGO *</span>
+						<div class="contact100-form-radio m-t-15">
+							<input class="input-radio100" id="radio6" type="radio" name="type-product" value="Acordar">
+							<label class="label-radio100" for="radio6">
+								Acordar con el comprador  
+								<img src="images/estrecha-manos.png" width="40" alt="Aconvenir">
+							</label>
+						</div>
+				</div>
+
+				<div class="wrap-input100 validate-input bg1" data-validate="¡Por favor escriba su nombre!">
+						<h5>Información personal</h5>
+						<hr/>
+					<span class="label-input100">NOMBRE COMPLETO *</span>
+						<input class="input100" type="text" name="name" placeholder="Ingrese su Nombre">
+					</div>
+
+					<div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate = "¡Ingrese su correo electrónico!">
+						<span class="label-input100">CORREO ELECTRONICO *</span>
+						<input class="input100" type="text" name="email" placeholder="Ingrese Email (Ej: jit300@..com) ">
+					</div>
+	
+					<div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate = "¡Ingrese Numero!">
+						<span class="label-input100">NUMERO DE CONTACTO</span>
+						<input class="input100" type="text" name="phone" placeholder="Ej: 096 *** ***">
+					</div>
+
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						<span>
+							Publicar Citycoco
+							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+<!-- JavaScript Includes -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="assets/js/jquery.knob.js"></script>
+
+<!-- jQuery File Upload Dependencies -->
+<script src="assets/js/jquery.ui.widget.js"></script>
+<script src="assets/js/jquery.iframe-transport.js"></script>
+<script src="assets/js/jquery.fileupload.js"></script>
+<!-- Our main JS file -->
+<script src="assets/js/script.js"></script>
+
+<!--_______________________________________________________________________________________________-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--_______________________________________________________________________________________________-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--_______________________________________________________________________________________________-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--_______________________________________________________________________________________________-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--_______________________________________________________________________________________________-->
+
+	<script>
+		$(".js-select2").each(function(){
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+
+
+			$(".js-select2").each(function(){
+				$(this).on('select2:close', function (e){
+					if($(this).val() == "Selecciona Modelo") {
+						$('.js-show-service').slideUp();
+					}
+					else {
+						$('.js-show-service').slideUp();
+						$('.js-show-service').slideDown();
+					}
+				});
+			});
+		})
+	</script>
+<!--_______________________________________________________________________________________________-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--_______________________________________________________________________________________________-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--_______________________________________________________________________________________________-->
+	<script src="vendor/noui/nouislider.min.js"></script>
+	<script>
+	    var filterBar = document.getElementById('filter-bar');
+
+	    noUiSlider.create(filterBar, {
+	        start: [ 2, 8 ],
+	        connect: true,
+	        range: {
+	            'min': 0,
+	            'max': 12
+	        }
+	    });
+
+	    var skipValues = [
+	    document.getElementById('value-lower'),
+	    document.getElementById('value-upper')
+	    ];
+
+	    filterBar.noUiSlider.on('update', function( values, handle ) {
+	        skipValues[handle].innerHTML = Math.round(values[handle]);
+	        $('.contact100-form-range-value input[name="from-value"]').val($('#value-lower').html());
+	        $('.contact100-form-range-value input[name="to-value"]').val($('#value-upper').html());
+	    });
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
